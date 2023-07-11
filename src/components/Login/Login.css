@@ -1,0 +1,46 @@
+.main-space {
+  width: 90%;
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-login {
+  text-align: center;
+}
+.main-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-buttons input {
+  width: 400px;
+  height: 40px;
+  margin: 10px 0px;
+  border: none;
+  background-color: rgb(241, 238, 238);
+  padding: 0px 10px;
+  font-size: 20px;
+}
+.main-buttons input:focus {
+  outline: none;
+}
+.main-buttons button {
+  padding: 15px;
+  background-color: rgb(25, 135, 84);
+  color: white;
+  border: 1px solid rgb(25, 135, 84);
+  border-radius: 1em;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 14p;
+}
+.main-buttons button:hover {
+  background-color: white;
+  color: rgb(25, 135, 84);
+  border: 1px solid rgb(25, 135, 84);
+  border-radius: 1em;
+}
