@@ -1,0 +1,16 @@
+.alumnos-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.alumnos-container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.alumnos-button {
+  width: 100%;
+}

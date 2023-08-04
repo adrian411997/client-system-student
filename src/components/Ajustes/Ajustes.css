@@ -1,0 +1,38 @@
+.ajustes-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.ajustes-container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ajustes-title {
+  padding-bottom: 30px;
+}
+.ajustes-options {
+  width: 90%;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.options input {
+  margin-top: 10px;
+  height: 50px;
+  background-color: rgb(243, 243, 243);
+  padding: 0px 10px;
+
+  width: 50%;
+  border: none;
+  border-radius: 0.4em;
+}
+.options input:focus {
+  outline: none;
+}

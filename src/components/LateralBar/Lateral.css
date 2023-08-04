@@ -16,12 +16,17 @@
   text-align: center;
   padding: 15px;
   border-radius: 20px;
+
   transition: 0.3s ease-in-out;
 }
 .button-false:hover {
   background-color: aqua;
   cursor: pointer;
 }
-.button-false h2 {
+.title-button {
+  font-size: 20px;
+}
+.links-buttons {
   color: white;
+  text-decoration: none;
 }
