@@ -112,7 +112,6 @@ Para esta parte es necesario:
 
 ## Conclusión
 
-Este proyecto ha resultado en una aplicación de sistema de gestión de notas para maestros que facilita la tarea de almacenar, visualizar y analizar las calificaciones de los alumnos. Al proporcionar una interfaz intuitiva y robusta, la aplicación contribuye a la eficiencia de los maestros y al seguimiento de los progresos de los alumnos. Esta documentación sirve como guía integral para la comprensión y uso efectivo de la aplicación.
-Puedes guardar este contenido en un archivo con extensión .md para visualizarlo en plataformas que admitan Markdown, como GitHub, GitLab, y lectores de Markdown en general.
+Este proyecto ha resultado en una aplicación de sistema de gestión de notas para maestros que facilita la tarea de almacenar, visualizar y analizar las calificaciones de los alumnos. Al proporcionar una interfaz intuitiva y robusta, la aplicación contribuye a la eficiencia de los maestros y al seguimiento de los progresos de los alumnos. 
 Cabe recalcar que esta es una version temprana del proyecto, tanto el diseño como el funcionamiento y la disposicion de los elementos pueden sufrir cambios en el futuro.
 
