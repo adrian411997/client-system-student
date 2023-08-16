@@ -30,3 +30,10 @@
   color: white;
   text-decoration: none;
 }
+.linking img,
+h2 {
+  pointer-events: none;
+}
+.activo {
+  background-color: aqua;
+}

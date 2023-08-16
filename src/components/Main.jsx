@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Alumnos from "./Alumnos/Alumnos";
 import Ajustes from "./Ajustes/Ajustes";
 import XMateria from "./XMateria/XMateria";
+import Trimestres from "./Trimestres/Trimestres";
 const Main = () => {
   return (
     <Router>
@@ -18,6 +19,7 @@ const Main = () => {
           <Route path="/configuration" element={<Ajustes />}></Route>
           <Route path="/notas">
             <Route path="/notas/materia" element={<XMateria />}></Route>
+            <Route path="/notas/trimestrales" element={<Trimestres />}></Route>
           </Route>
         </Routes>
       </div>
