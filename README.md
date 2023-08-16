@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+![React](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge)
+![Javascript](https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=flat-square)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Documentacion en progreso
 
-## Available Scripts
+# DOCENTE APP
 
-In the project directory, you can run:
+## Introducción
 
-### `npm start`
+Esta documentación describe el diseño, desarrollo y funcionamiento de una aplicación de sistema de gestión de notas para maestros. La aplicación está diseñada para permitir a los maestros almacenar y visualizar las notas de sus alumnos, así como generar tablas de calificaciones. A lo largo de este documento, se detallarán los aspectos clave de la aplicación.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tabla de Contenidos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Visión General**
 
-### `npm test`
+   - Objetivo de la aplicación
+   - Funcionalidades principales
+   - Tecnologías utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Instalación y Configuración**
 
-### `npm run build`
+   - Configuración de la base de datos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Registro e Inicio de Sesión**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   - Creación de cuentas de maestros
+   - Autenticación segura
+   - Recuperación de contraseñas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Gestión de Alumnos**
 
-### `npm run eject`
+   - Agregar, editar y eliminar alumnos
+   - Asociar alumnos con maestros
+   - Vista de detalles del alumno
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **Registro de Notas**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   - Ingreso de calificaciones por asignatura
+   - Asociación de notas con alumnos
+   - Validación de datos de calificación
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6. **Generación de Tablas de Calificaciones**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   - Creación de tablas de calificaciones por clase
+   - Visualización de promedios y estadísticas
+   - Exportación de tablas en formatos comunes
 
-## Learn More
+7. **Interfaz de Usuario**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   - Diseño intuitivo y amigable
+   - Navegación entre secciones
+   - Experiencia responsive para dispositivos móviles
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+8. **Seguridad y Privacidad**
 
-### Code Splitting
+   - Protección de datos sensibles
+   - Control de acceso basado en roles
+   - Encriptación de datos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+9. **Pruebas y Depuración**
 
-### Analyzing the Bundle Size
+   - Pruebas unitarias y de integración
+   - Identificación y solución de errores
+   - Optimización de rendimiento
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+10. **Despliegue y Mantenimiento**
 
-### Making a Progressive Web App
+    - Elección del entorno de despliegue (servidor web, nube, etc.)
+    - Implementación de actualizaciones
+    - Copias de seguridad y restauración
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+11. **Soporte y Documentación Adicional**
+    - Guía del usuario para maestros
+    - Resolución de problemas comunes
+    - Contacto para asistencia técnica
 
-### Advanced Configuration
+## Vision general
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Objetivo principal
 
-### Deployment
+El objetivo principal de la aplicación es facilitar a los maestros el seguiminento académico de sus estudiantes mediante el registro de notas y el cálculo automático del promedio de cada alumno tanto por trimestre como anual.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Funciones principales
 
-### `npm run build` fails to minify
+- **Registros de alumnos**: Para empezar con los registros de notas es necesario registrar a los alumnos. Solo se pide el nombre y el apellido.
+- **Registros de materias**: Puedes agregar las materias que dictas.
+- **Registro de notas**: Introduce las notas de tus alumnos rellenando un formulario para especificar al alumno, materia y trimestre.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Cabe recalcar que para empezar a usar la aplicacion es necesario crear un usuario para una mejorar la relacion de los datos introducidos con el mismo. Solo hace falta un nombre de usuario, contraseña y un email.
+
+### Tecnologias utilizadas
+
+Se ha utilizado React como principal herramienta para el front end, Redux-Toolkit para el contro de estados, Bootstrap y css para los estilos.
+
+## Instalacion y configuracion
+
+### Instalacion de dependencias
+
+Para esta parte es necesario ir al repositorio de la <a href="https://github.com/adrian411997/api-system-students">API</a> de la aplicación. Se tiene pensado desplegar esta parte en un servidor para hacerlo accesible a mas usuario.
+
+Para esta parte es necesario:
+
+- Clonar este repositorio
+- Dirigirnos al directorio del proyecto
+- Ejecutar:
+
+  ```
+  npm start
+  ```
+
+  La aplicación se desplegará en su navegador web en la direccion **https/localhost:3000/**
+
+## Conclusión
+
+Este proyecto ha resultado en una aplicación de sistema de gestión de notas para maestros que facilita la tarea de almacenar, visualizar y analizar las calificaciones de los alumnos. Al proporcionar una interfaz intuitiva y robusta, la aplicación contribuye a la eficiencia de los maestros y al seguimiento de los progresos de los alumnos. Esta documentación sirve como guía integral para la comprensión y uso efectivo de la aplicación.
+Puedes guardar este contenido en un archivo con extensión .md para visualizarlo en plataformas que admitan Markdown, como GitHub, GitLab, y lectores de Markdown en general.
+Cabe recalcar que esta es una version temprana del proyecto, tanto el diseño como el funcionamiento y la disposicion de los elementos pueden sufrir cambios en el futuro.
+
