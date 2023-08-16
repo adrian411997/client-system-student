@@ -1,21 +1,22 @@
-.xmateria-space {
+.trimestre-space {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.xmateria-container {
+.trimestre-container {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.xmateria-title {
+.trimestre-title {
   width: 100%;
   text-align: center;
 }
-.xmateria-list {
-  width: 90%;
-  padding: 10px 0px;
+.trimestre-list {
+  width: 100%;
+  padding: 30px;
+  overflow-y: auto;
 }

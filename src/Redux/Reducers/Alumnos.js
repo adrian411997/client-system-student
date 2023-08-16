@@ -11,10 +11,29 @@ export const getAlumnos = createAsyncThunk(
     return response;
   }
 );
+export const editAlumnos = createAsyncThunk(
+  "alumnos/editAlumnos",
+  async (payload) => {
+    const response = await axios
+      .put("http://localhost:3001/api/alumnos", payload)
+      .then((response) => response.data);
+    return response.data;
+  }
+);
+export const deleteAlumnos = createAsyncThunk(
+  "alumnos/deleteAlumnos",
+  async (payload) => {
+    const response = await axios
+      .delete(`http://localhost:3001/api/alumnos?id=${payload}`)
+      .then((response) => response.data);
+    return response.data;
+  }
+);
 
 export const postAlumnos = createAsyncThunk(
   "alumnos/postAlumnos",
   async (payload) => {
+    console.log(payload);
     const response = await axios
       .post("http://localhost:3001/api/alumnos", payload)
       .then((response) => response.data)

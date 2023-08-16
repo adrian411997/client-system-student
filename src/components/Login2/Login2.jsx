@@ -33,8 +33,6 @@ const Login2 = () => {
     }
   }, [myCredentials]);
 
-  console.log(form);
-
   return (
     <div className="main-space">
       <div className="main-login">

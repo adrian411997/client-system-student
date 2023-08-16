@@ -6,7 +6,28 @@ import Swal from "sweetalert2";
 import axios from "axios";
 
 const Login = () => {
+  //VARIABLES
   const navigate = useNavigate();
+  const [form, setForm] = useState({
+    nombre: "",
+    email: "",
+    password: "",
+  });
+
+  //FUNCIONES
+  const createUser = async () => {
+    try {
+      const response = await axios.post("http://localhost:3001/api/user", form);
+      Swal.fire({ title: response.data.message, icon: response.data.result });
+    } catch (error) {
+      Swal.fire({
+        title: error.response.data.message,
+        icon: error.response.data.result,
+      });
+    }
+  };
+  const onchangetext = (e) =>
+    setForm({ ...form, [e.target.name]: e.target.value });
 
   useEffect(() => {
     const isLogged = localStorage.getItem("userCredentials");
@@ -14,26 +35,7 @@ const Login = () => {
       navigate("/students");
     }
   }, [navigate]);
-  const [form, setForm] = useState({
-    nombre: "",
-    email: "",
-    password: "",
-  });
-  const createUser = async () => {
-    try {
-      const response = await axios.post("http://localhost:3001/api/user", form);
-      Swal.fire({ title: response.data.message, icon: response.data.result });
-    } catch (error) {
-      console.log(error);
-      Swal.fire({
-        title: error.response.data.message,
-        icon: error.response.data.result,
-      });
-    }
-  };
 
-  const onchangetext = (e) =>
-    setForm({ ...form, [e.target.name]: e.target.value });
   return (
     <div className="main-space">
       <div className="main-login">

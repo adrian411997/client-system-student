@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import "./Ajustes.css";
 const Ajustes = () => {
+  // VARIABLES
+
   const dispatch = useDispatch();
   const navigator = useNavigate();
   const credentials = JSON.parse(localStorage.getItem("userCredentials"));
@@ -15,6 +17,9 @@ const Ajustes = () => {
     nombre: credentials.user.usuario_nombre,
     password: credentials.user.password,
   });
+
+  //FUNCIONES
+
   const handleInputChange = (e) => {
     setInputValue({ ...inputValue, [e.target.name]: e.target.value });
   };

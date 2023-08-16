@@ -11,6 +11,6 @@ export const botones = [
 ];
 export const notasButtons = [
   { title: "Por materia", image: xalumno, toURL: "/notas/materia" },
-  { title: "Trimestrales", image: trimestrales, toURL: "/trimestrales" },
+  { title: "Trimestrales", image: trimestrales, toURL: "/notas/trimestrales" },
   { title: "Anual", image: anuales, toURL: "/anual" },
 ];
